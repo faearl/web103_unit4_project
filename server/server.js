@@ -3,8 +3,8 @@ import path from 'path'
 import favicon from 'serve-favicon'
 import dotenv from 'dotenv'
 
-// import the router from your routes file
-
+import orderRouter from './routes/orders.js'
+import menuRouter from './routes/menu.js'
 
 dotenv.config()
 
@@ -23,6 +23,8 @@ else if (process.env.NODE_ENV === 'production') {
 }
 
 // specify the api path for the server to use
+app.use('/api/orders', orderRouter)
+app.use('/api/menu', menuRouter)
 
 
 if (process.env.NODE_ENV === 'production') {

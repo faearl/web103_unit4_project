@@ -1,0 +1,106 @@
+.view-orders-page {
+    padding: 32px 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.view-orders-page h2 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 28px;
+    align-self: flex-start;
+}
+
+.no-orders {
+    color: #aaa;
+    font-size: 1rem;
+}
+
+.orders-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 700px;
+}
+
+.order-card {
+    background: #fff;
+    border: 2px solid #eee;
+    border-radius: 16px;
+    padding: 20px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    transition: box-shadow 0.2s;
+}
+
+.order-card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.order-name {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.order-images {
+    display: flex;
+    gap: 10px;
+}
+
+.order-images img {
+    flex: 1;
+    min-width: 0;
+    height: 140px;
+    object-fit: contain;
+    border-radius: 10px;
+    border: 2px solid #eee;
+}
+
+.order-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order-price {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #555;
+}
+
+.order-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.order-actions button {
+    padding: 8px 20px;
+    border-radius: 8px;
+    border: 2px solid #ff80c0;
+    background: #fff;
+    color: #c0006a;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+}
+
+.order-actions button:hover {
+    background: #ff80c0;
+    color: #fff;
+}
+
+.order-actions .delete-btn {
+    border-color: #eee;
+    color: #aaa;
+}
+
+.order-actions .delete-btn:hover {
+    background: #ff4d4d;
+    border-color: #ff4d4d;
+    color: #fff;
+}

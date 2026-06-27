@@ -2,8 +2,8 @@
 
 #root {
     --font-family: Rubik, Verdana, sans-serif;
-    --primary: rgb(115, 2, 12);
-    --primary-hover: black;
+    --primary: rgb(18, 15, 16);
+    --primary-hover: rgb(234, 204, 204);
     --color: white;
     --h1-color: var(--color);
     --h2-color: var(--color);
@@ -32,7 +32,9 @@
     margin-bottom: 10px;
 }
 
-#root [role=button], #root button, #root input[type=submit] {
+#root [role=button],
+#root button,
+#root input[type=submit] {
     font-family: var(--font-family);
     font-weight: 500;
     text-transform: uppercase;
@@ -41,7 +43,9 @@
     width: max-content;
 }
 
-#root [role=button]:hover, #root button:hover, #root input[type=submit]:hover {
+#root [role=button]:hover,
+#root button:hover,
+#root input[type=submit]:hover {
     border: 2px solid var(--color);
 }
 

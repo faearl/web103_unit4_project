@@ -12,7 +12,8 @@ const createOrdersTable = async () => {
             container_id INT REFERENCES containers(id) NOT NULL,
             flavor_id INT REFERENCES flavors(id) NOT NULL,
             topping1_id INT REFERENCES toppings(id),
-            topping2_id INT REFERENCES toppings(id)
+            topping2_id INT REFERENCES toppings(id),
+            total_price DECIMAL(10,2) NOT NULL
         )
     `
 
@@ -157,4 +158,4 @@ const seed = async () => {
     await createOrdersTable()
 }
 
-seed()
+seed().then(() => process.exit(0)).catch(() => process.exit(1))
